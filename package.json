@@ -1,6 +1,6 @@
 {
   "name": "test-publish-npm-quinn-d",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "test ability to publish a typescript package to npm",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
