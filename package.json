@@ -1,5 +1,5 @@
 {
-  "name": "test-publish-npm",
+  "name": "test-publish-npm-quinn-d",
   "version": "1.0.0",
   "description": "test ability to publish a typescript package to npm",
   "main": "index.js",
