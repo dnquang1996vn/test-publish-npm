@@ -1,0 +1,25 @@
+{
+  "name": "test-publish-npm",
+  "version": "1.0.0",
+  "description": "test ability to publish a typescript package to npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "tsc",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnquang1996vn/test-publish-npm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnquang1996vn/test-publish-npm/issues"
+  },
+  "homepage": "https://github.com/dnquang1996vn/test-publish-npm#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
