@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "lib": ["es2015", "es2016"],
+    "jsx": "react-jsx",
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
@@ -7,5 +9,6 @@
     "strict": true
   },
   "include": ["src"],
+  "baseUrl": "./lib",
   "exclude": ["node_modules", "**/__tests__/*"]
 }

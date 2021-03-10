@@ -6,12 +6,15 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc",
-    "prepare" : "npm run build",
+    "build": "tsc -W",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build",
     "preversion": "npm run build",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "clean": "if exist dist ( rd /S /Q dist)",
+    "updateLink": "yarn run clean && tsc && yarn unlink && yarn link",
+    "release": "release-it"
   },
   "files": [
     "lib/**/*"
@@ -28,6 +31,12 @@
   },
   "homepage": "https://github.com/dnquang1996vn/test-publish-npm#readme",
   "devDependencies": {
+    "@types/react": "^17.0.3",
+    "nodemon": "^2.0.7",
+    "release-it": "^14.4.1",
     "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
   }
 }
